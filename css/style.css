@@ -1,4 +1,291 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Playfair+Display&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Playfair+Display&family=Roboto:wght@300&family=Ultra&display=swap');
+
+
+*{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background: black;
+    position: sticky;
+    top: 0;
+}
+nav ul li a{
+    color:#fff ;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #3EB2FD;
+    border-radius: 20px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background: #3EB2FD;
+}
+.active{
+    background: #3EB2FD;
+    transition: 0.5s;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    width: 60px;
+}
+
+/* group body-top */
+
+.group-body-top{
+  
+    padding: 20px;
+    background-image: url(/img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    
+}
+h1,h3,h5{
+    color: #fff;
+    padding: 7px;
+}
+h1{
+    font-size: 5rem;
+}
+.group-icon img{
+    width: 30px;
+    padding: 5px;
+}
+
+.group-icon{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS */
+.button-21 {
+    margin: 10px;
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+
+
+/* section */
+
+.img-cv,img{
+    width: 300px;
+}
+section{
+    margin-top: 20px;
+   
+}
+
+.card-cv{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body h2{
+    margin-top: 10px 10px;
+    font-size: 36px;
+}
+
+
+footer{
+    background: black;
+    padding: 20px;
+}
+
+/* about-page */
+label{
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.section-about{
+    background:#eceff1 ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    color:black;
+    width: 23%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 3px solid #eeff41 ;
+    background: #fff;
+    margin-top: 10px 10px;
+    
+}
+.card,.h-size{
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.h-size{
+    font-size: 1rem;
+}
+
+.img{
+    margin-top:10px;
+    text-align: center;
+}
+.img img{
+    width: 35%;
+}
+
+.group{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.star{
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:768px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    .card-cv{
+        display: block;
+        text-align: center;
+    }
+   
+    .group-body-top{
+    margin-top:0;
+    background-image: url(/img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    }
+    h1{
+        font-size: 4rem;
+    }
+
+    .section-about{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        color:black;
+        width: 45%;
+        margin-bottom: 0px;
+        border: 3px solid #eeff41 ;
+        background: #fff;
+        margin-top: 10px;
+        
+    }
+}
+
+@media (max-width:414px){
+
+    nav ul li{
+        display: block;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    .card-cv{
+        display: block;
+        text-align: center;
+    }
+
+    .group-body-top{
+        margin-top:0;
+        background-image: url(/img/1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 45vh;
+        text-align: center;
+        }
+
+        .section-about{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .card{
+            color:black;
+            width: 80%;
+            margin-bottom: 20px;
+            background: #fff;
+            margin-top: 10px;
+            
+        }
 }
