@@ -17,6 +17,8 @@ body{
 }
 header{
     background: black;
+    position: sticky;
+    top: 0;
 }
 nav ul li a{
     color:#fff ;
@@ -260,7 +262,8 @@ label{
 
 .icon-photos{
     background: #b17ab9 ;
-    height: 25vh;
+    height: 20vh;
+    padding: 20px;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 5px;
@@ -326,7 +329,7 @@ span{
     .icon-photos{
         background: #b17ab9 ;
         height:17vh;
-        padding: 20px;
+        padding: 50px;
         text-align: center;
         margin-bottom: 20px;
         margin-top: 5px;
@@ -394,7 +397,6 @@ span{
             padding: 20px;
             text-align: center;
             margin-bottom: 20px;
-            margin-top: 5px;
         }
         .icon-photos,li .fa{
             margin: 10px;
