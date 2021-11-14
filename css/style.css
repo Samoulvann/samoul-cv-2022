@@ -17,8 +17,6 @@ body{
 }
 header{
     background: black;
-    position: sticky;
-    top: 0;
 }
 nav ul li a{
     color:#fff ;
@@ -30,7 +28,6 @@ nav ul li{
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    color: #3EB2FD;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -39,7 +36,6 @@ nav ul li:hover{
 }
 .active{
     background: #3EB2FD;
-    transition: 0.5s;
 }
 
 header{
@@ -50,6 +46,7 @@ header{
 }
 
 .logo{
+    background: black;
     cursor: pointer;
     width: 60px;
 }
@@ -154,14 +151,17 @@ section{
 
 footer{
     background: black;
-    padding: 20px;
+    padding: 50px;
 }
 
 /* about-page */
 label{
     font-size: 2rem;
     font-weight: 500;
-    
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+
 }
 .section-about{
     background:#eceff1 ;
@@ -174,10 +174,11 @@ label{
     color:black;
     width: 23%;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 2px;
-    border: 3px solid #eeff41 ;
     background: #fff;
-    margin-top: 10px 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
 }
 .card,.h-size{
@@ -208,11 +209,75 @@ label{
     justify-content: space-evenly;
 }
 .star{
-    color: orangered;
+    color: orange;
     margin-bottom: 10px;
 }
 
+/* group-exucation */
 
+.group-education{
+    background: #fafafa ;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.group-education,h3,h4,p{
+    padding: 10px 20px;
+    color: black;
+}
+.group-education,h4{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.group-education,h3{
+    font-size: 1rem;
+}
+
+/* section-photos-group */
+
+.section-photos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-2022 img{
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.img-2023{
+    padding: 20px;
+    background-image: url(/img/img5.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 10px;
+}
+
+.icon-photos{
+    background: #b17ab9 ;
+    height: 25vh;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.icon-photos,li .fa{
+    margin: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+h4{
+    font-weight: bold;
+    color: #fff;
+}
+
+span{
+    color: orange;
+}
 @media (max-width:768px){
     header{
         display: block;
@@ -245,15 +310,49 @@ label{
         color:black;
         width: 45%;
         margin-bottom: 0px;
-        border: 3px solid #eeff41 ;
         background: #fff;
-        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         
     }
+
+    .section-photos{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    /* icon-photos */
+
+    .icon-photos{
+        background: #b17ab9 ;
+        height:17vh;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .icon-photos,li .fa{
+        margin: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    h4{
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .card-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .star{
+        color: orange;
+        margin-bottom: 10px;
+    }
+  
 }
 
 @media (max-width:414px){
-
     nav ul li{
         display: block;
     }
@@ -285,7 +384,26 @@ label{
             width: 80%;
             margin-bottom: 20px;
             background: #fff;
-            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             
         }
+        /* icon-photos */
+        .icon-photos{
+            background: #b17ab9 ;
+            height: 20vh;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        .icon-photos,li .fa{
+            margin: 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+        h4{
+            font-weight: bold;
+            color: #fff;
+        }
+        
 }
